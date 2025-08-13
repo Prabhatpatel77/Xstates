@@ -1,4 +1,5 @@
 import axios from 'axios';
+import styles from './selector.module.css'
 import { useEffect, useState } from 'react';
 
 
@@ -89,9 +90,10 @@ export default function Selector(){
           
            </div>
 
-           <div className='ShowCity'>
+           <div className={styles.display}>
             {selectedCity&&(
-                <h2 className='display'>You Selected <span>{selectedCountry}</span>,{selectedState},{selectedCity}</h2>
+                <h2 className='display'>You Selected <span className={styles.country}>{selectedCountry}</span>
+                <span className={styles.faded}>{" "},{selectedState}, {selectedCity}</span></h2>
             )}
            </div>
         </div>

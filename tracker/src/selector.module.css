@@ -1,0 +1,14 @@
+.display {
+  font-size: 20px;
+}
+
+.country {
+  font-weight: bold;
+  color: black;
+  font-size:50px;
+}
+
+.faded {
+  color: gray;
+  opacity: 0.7;
+}
