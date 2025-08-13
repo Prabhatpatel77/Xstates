@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import Selector from './Selector'
 import './App.css';
 

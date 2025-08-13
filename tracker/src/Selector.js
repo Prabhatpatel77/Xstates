@@ -90,9 +90,11 @@ export default function Selector(){
              </div>
 
            <div className={styles.display}>
-            {selectedCity&&(
-                <h2 className='display'>You Selected <span className={styles.country}>{selectedCountry}</span>
-                <span className={styles.faded}>,{" "}{selectedState}, {selectedCity}</span></h2>
+            {/* {selectedCity&&(
+                <h2 className='display'>You Selected <span className={styles.country}>{selectedCountry}</span> <span className={styles.faded}>, {selectedState}, {selectedCity}</span></h2>
+            )} */}
+              {selectedCity&&(
+                <h2 className='display'>You Selected <span>{selectedCountry}</span>,{selectedState},{selectedCity}</h2>
             )}
            </div>
         </div>
