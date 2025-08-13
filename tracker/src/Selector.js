@@ -84,16 +84,15 @@ export default function Selector(){
               disabled={!selectedState}
               className='Select City' 
               >
-                <option value="" disabled>Select City </option>
+                <option value="" disabled>Select City</option>
                  {cities.map((city)=><option key={city} value={city}>{city}</option>)}
             </select>
-          
-           </div>
+             </div>
 
            <div className={styles.display}>
             {selectedCity&&(
                 <h2 className='display'>You Selected <span className={styles.country}>{selectedCountry}</span>
-                <span className={styles.faded}>{" "},{selectedState}, {selectedCity}</span></h2>
+                <span className={styles.faded}>,{" "}{selectedState}, {selectedCity}</span></h2>
             )}
            </div>
         </div>
