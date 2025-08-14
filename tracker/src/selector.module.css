@@ -1,11 +1,19 @@
-.display {
+/* .display {
   font-size: 20px;
+} */
+.dropdown{
+  height:40px;
+  /* width:300px; */
+  margin-right:20px;
 }
-
-.country {
+/* .country {
+  
+  
+} */
+.city{
+  font-size:50px;
   font-weight: bold;
   color: black;
-  font-size:50px;
 }
 
 .faded {

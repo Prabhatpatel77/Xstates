@@ -58,7 +58,7 @@ export default function Selector(){
            <div>
              <select value={selectedCountry}
              onChange={(e)=>setSelectedCountry(e.target.value)}
-             className='countryDropdown'
+             className={styles.dropdown}
              >
             <option value="" disabled>Select Country</option>
               {countries.map((country)=><option key={country} value={country}>{country}</option>)}                           
@@ -68,7 +68,7 @@ export default function Selector(){
              <select value={selectedState}
              onChange={(e)=>setSelectedState(e.target.value)}
              disabled={!selectedCountry}
-             className='statesDropdown'
+             className={styles.dropdown}
              >
                 <option value="" disabled>Select State</option>
                  {states.map((state)=><option key={state} value={state}>{state}</option>)}
@@ -82,7 +82,7 @@ export default function Selector(){
                 setSelectedCity(e.target.value)
               })}
               disabled={!selectedState}
-              className='Select City' 
+              className={styles.dropdown}
               >
                 <option value="" disabled>Select City</option>
                  {cities.map((city)=><option key={city} value={city}>{city}</option>)}
@@ -91,7 +91,7 @@ export default function Selector(){
 
            <div >
             {selectedCity&&(
-                <h2 className='display'>You Selected <span className={styles.country}>{selectedCity}</span> <span className={styles.faded}>, {selectedState}, {selectedCountry}</span></h2>
+                <h2 className='display'>You Selected <span className={styles.city}>{selectedCity}</span><span className={styles.faded}>, {selectedState}, {selectedCountry}</span></h2>
             )}
               {/* {selectedCity&&(
                 <h2 className='display'>You Selected <span>{selectedCity}</span>,{selectedState},{selectedCountry}</h2>
